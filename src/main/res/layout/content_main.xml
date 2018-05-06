@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.willieapps.nia.mixvid.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/black">
+
+    // logo
+    <ImageView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id ="@+id/app_header"
+        android:src="@drawable/logo"
+        />
+    // button for about page
+    <ImageButton
+
+        android:id="@+id/bAbout"
+        android:src="@drawable/about"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/app_header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp" />
+
+    // button for home
+    <ImageButton
+        android:id="@+id/bHome"
+        android:src="@drawable/home"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/bAbout"
+        android:layout_centerHorizontal="true" />
+
+    //button for contact
+    <ImageButton
+        android:id="@+id/bContact"
+        android:src="@drawable/contact"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/bHome"
+        android:layout_alignRight="@+id/app_header"
+        android:layout_alignEnd="@+id/app_header"
+        />
+
+
+</RelativeLayout>
