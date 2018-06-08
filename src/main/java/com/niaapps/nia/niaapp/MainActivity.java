@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
         home.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://niaapplications.wordpress.com/home/");
+                Uri uri = Uri.parse("https://niaapplications.wordpress.com/");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
